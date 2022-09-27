@@ -1,0 +1,162 @@
+:root{
+    background: #DDDDDD;
+}
+/* Default Sizes, Laptops + */
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    padding: 12.5%;
+    
+}
+
+.wrapper_animation{
+ transition: all 0.5s ease;
+}
+
+.landingHeader{
+    align-self: flex-end;
+    width: 50%;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+
+    text-align: right;
+    border-radius: 0;
+    
+    color: #240D57;
+}
+
+.landingHeader > .emphasisText{
+    width: 295px;
+    height: 74px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+
+    text-align: right;
+
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.landingSubtitle{
+    align-self: flex-end;
+    width: 50%;
+    height: 56px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+
+    color: #4F4F4F;
+}
+
+.applicationImg{
+    flex-grow: 3;
+    /* width: 440px; */
+    height: 775.69px;
+    /* left: calc(50% - 440px/2 - 366px); */
+    top: 100px;
+    filter: drop-shadow(0px 0px 46.8696px rgba(0, 0, 0, 0.05));
+    border-radius: 35.1522px;
+    position: absolute;
+}
+
+.createEvent{
+    align-self: flex-end;
+    /* Button */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+
+    width: 320px;
+    height: 55px;
+    left: calc(50% - 320px/2 + 436px);
+    top: 622px;
+
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+}
+.createEvent > span {
+    /* 🎉 Create my event */
+    width: 181px;
+    height: 23px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    white-space: nowrap;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+
+/* Tablets and Smaller */
+@media screen and (max-width: 1024px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: unset;
+        margin: 1rem;
+    }
+    .landingHeader{
+        justify-self: center;
+        font-family: Helvetica;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+        height: unset;
+        width: 80%;
+        border-radius: 0px;
+
+    }
+    .landingHeader > .emphasisText{
+        justify-self: center;
+        height: unset;
+        width: 100%;
+    }
+    .landingSubtitle{
+        justify-self: center;
+        text-align: center;
+        height: unset;
+        width: 80%;
+    }
+    .createEvent{
+        justify-self: center;
+        text-align: center;
+        border-radius: 10px;
+        padding: 16px;
+
+    }
+    .applicationImg{
+        justify-self: center;
+        position: unset;
+        left: unset;
+        border-radius: 24.8461971282959px;
+        margin-bottom: 2rem;
+    }
+}
